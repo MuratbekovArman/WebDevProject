@@ -1,5 +1,7 @@
 <app-header [isLogged] = "logged" (isShown) = "visualizeForm($event)"></app-header>
 
+<hr>
+
 <div *ngIf="!logged" class="form">
   <h1 class="form-header">Login form</h1>
   <div class="inputs">
@@ -16,5 +18,7 @@
 <div *ngIf="logged">
   <router-outlet></router-outlet>
 </div>
+
+<hr>
 
 <app-footer></app-footer>

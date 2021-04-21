@@ -18,7 +18,7 @@ export class CategoryService {
     });
   }
 
-  getCompanies(): Observable<Category[]>{
+  getCategories(): Observable<Category[]>{
     return this.http.get<Category[]>(`${this.BASE_URL}/api/companies/`);
   }
 }

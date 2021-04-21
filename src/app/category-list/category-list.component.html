@@ -1,1 +1,7 @@
-<p>category-list works!</p>
+<ul>
+  <li *nfFor="let category in categories">
+    <a routerLink = 'categories/{{category.id}}'>
+      {{category.name}}
+    </a>
+  </li>
+</ul>
