@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoryService } from '../category.service';
+import { Category } from '../models';
 
 @Component({
   selector: 'app-category-list',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./category-list.component.css']
 })
 export class CategoryListComponent implements OnInit {
-
-  constructor() { }
+  categories: Category[] = [];
+  constructor(private categoryService: CategoryService) { }
 
   ngOnInit(): void {
+  }
+
+  getCompanies(): void{
+    this.categoryService.getCategories().subscribe(((categories) =>{
+      this.categories = categories;
+    }))
   }
 
 }

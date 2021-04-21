@@ -9,11 +9,11 @@ import {ProductDetailComponent} from './product-detail/product-detail.component'
 
 const routes: Routes = [
   {path: '', component: MainComponent},
-  {path: 'categories/', component: CategoryListComponent},
-  {path: 'categories/:category_id/', component: SubCategoriesComponent},
-  {path: 'categories/:category_id/:subcategory_id/', component: ProductsComponent},
-  {path: 'categories/:category_id/:subcategory_id/:product_id/', component: ProductDetailComponent},
-  {path: 'sales/', component: SalesComponent}
+  {path: 'categories', component: CategoryListComponent},
+  {path: 'categories/:category_id', component: SubCategoriesComponent},
+  {path: 'categories/:category_id/:subcategory_id', component: ProductsComponent},
+  {path: 'categories/:category_id/:subcategory_id/:product_id', component: ProductDetailComponent},
+  {path: 'sales', component: SalesComponent}
 ];
 
 @NgModule({

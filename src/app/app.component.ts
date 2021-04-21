@@ -6,6 +6,9 @@ import {CategoryService} from './category.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
+
 export class AppComponent implements OnInit{
   title = 'project-app';
 
@@ -29,10 +32,18 @@ export class AppComponent implements OnInit{
       this.username = '';
       this.password = '';
     });
+
   }
 
   logout(){
     this.logged = false;
     localStorage.removeItem('token');
+  }
+
+
+  visualizeForm(isShown: any){
+    if(!isShown){
+      this.logout();
+    }
   }
 }

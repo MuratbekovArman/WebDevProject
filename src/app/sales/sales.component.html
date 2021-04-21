@@ -1,1 +1,15 @@
-<p>sales works!</p>
+<div class="main">
+  <h1 class="sale-header">Sales</h1>
+  <div class="sale-list">
+    <div class="sale-card" *ngFor="let s of sales">
+        <div>
+          <img class="sale-image" src="{{s.image}}">
+        </div>
+        <div class="sale-inf">
+          <h3 class="sale-name">{{s.name}}</h3>
+          <p class="sale-description">{{s.description}}</p>
+          <p class="sale-date">Until: {{s.date.toDateString()}}</p>
+        </div>
+    </div>
+  </div>
+</div>
