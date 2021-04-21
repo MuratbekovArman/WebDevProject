@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import {Sub_category} from './models';
 import {PRODUCTS, SUB_CATEGORIES} from './fake_db';
 import {of} from 'rxjs';
 
