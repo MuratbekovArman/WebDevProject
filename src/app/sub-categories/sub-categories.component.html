@@ -1,1 +1,9 @@
 <p>sub-categories works!</p>
+
+<ul class="list">
+  <li *ngFor="let subCat of sub_categories">
+    <a routerLink="{{subCat.id}}">
+      {{subCat.name}}
+    </a>
+  </li>
+</ul>
