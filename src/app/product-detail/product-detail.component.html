@@ -1,11 +1,16 @@
-<p>product-detail works!</p>
 
-<div *ngIf="product">
-  <h2 >Product #{{product.id}}</h2>
+<div class="main-info" *ngIf="product">
+  <h2 class="name" >{{product.name}}</h2>
   <div>
-    <h3>Name: {{product.name}}</h3>
-    <p>Price: {{product.price}}</p>
+    <div class="description">
+      <h3>Name: {{product.name}}</h3>
+      <p>Price: {{product.price}}</p>
+      <p class="rating">Rating: {{product.rating}}</p>
+    </div>
+    <div class="product-image">
+      <img src="{{product.image}}">
+    </div>
   </div>
 </div>
-<button (click)="goBack()">Back</button>
+<button class="but" (click)="goBack()">Back</button>
 

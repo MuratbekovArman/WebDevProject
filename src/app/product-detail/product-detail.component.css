@@ -1,0 +1,26 @@
+.but{
+    position: relative;
+    border: 3px solid #ff681d;
+    border-radius:50px;
+    width: 300px;
+    height: 30px;
+    margin-left: 41%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-info{
+    margin-left:40%;
+    font:italic;
+
+}
+.name{
+    font-size: 30px;
+    margin-left: 10%;
+}
+.description{
+    margin-left: 10%;
+    font-size: 16px;
+}
+.product-image{
+    
+}
