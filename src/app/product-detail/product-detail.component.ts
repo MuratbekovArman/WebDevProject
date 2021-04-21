@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {Product} from '../models';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {ProductService} from '../product.service';
 import {ProductDetailService} from '../product-detail.service';
 import {Location} from '@angular/common';
+import { PRODUCTS } from '../fake_db';
 
 @Component({
   selector: 'app-product-detail',
@@ -12,12 +13,21 @@ import {Location} from '@angular/common';
 })
 export class ProductDetailComponent implements OnInit {
   product!: Product | undefined;
+  ids:any;
   constructor(private route: ActivatedRoute,
               private location: Location,
-              private productDetService: ProductDetailService) { }
+              private productDetService: ProductDetailService,
+              private router: Router) { }
 
   ngOnInit(): void {
-    this.getProduct();
+    //this.getProduct();
+    this.ids = this.router.url.split('/').slice(this.router.url.split('/').length-2,this.router.url.split('/').length);
+    console.log(this.ids);
+    this.product = PRODUCTS.find( (a) =>{
+      return a.id == this.ids[1];
+    })
+
+
     console.log(this.product);
   }
 

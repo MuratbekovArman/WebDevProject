@@ -1,8 +1,11 @@
-<ul>
-  <li *ngFor="let category of categories">
+<div class="main">
+  <div *ngFor="let category of categories" class="category">
+
     <a routerLink = '{{category.id}}'>
+      <img src="{{category.image}}" alt="123" width="100px">
       {{category.name}}
+
     </a>
-  </li>
-</ul>
+  </div>
+</div>
 <button type="button" routerLink="">Back</button>
