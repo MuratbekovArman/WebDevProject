@@ -1,10 +1,13 @@
 <h1>{{cat.name}}</h1>
 
-<ul class="list">
-  <li *ngFor="let subCat of sub_categories">
+<div class="box">
+  <p *ngFor="let subCat of sub_categories">
     <a routerLink="{{subCat.id}}">
-      {{subCat.name}}
+        <img class="pics" src="{{subCat.image}}" alt="123" width="100px">
+        <div class="subname">
+            {{subCat.name}}
+        </div>
     </a>
-  </li>
-</ul>
-<button type="button" (click)="goBack()">Back</button>
+</div>
+
+<button class="but" type="button" (click)="goBack()">Back</button>
