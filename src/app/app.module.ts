@@ -14,6 +14,7 @@ import { SalesComponent } from './sales/sales.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {AuthInterceptor} from './AuthInterceptor';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {AuthInterceptor} from './AuthInterceptor';
     SubCategoriesComponent,
     ProductsComponent,
     ProductDetailComponent,
-    SalesComponent
+    SalesComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+
+<div class="">
+  <div class="" *ngFor="let result of results">
+    <a routerLink="/categories/{{getCategoryId(result.sub_category)}}/{{result.sub_category}}/{{result.id}}">{{result.name}}</a>
+    {{result.description}}
+  </div>
+</div>

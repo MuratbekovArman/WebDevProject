@@ -5,8 +5,8 @@
   </a>
 
   <div class="search">
-    <input>
-    <button type="button" class="search-button">Search</button>
+    <input [(ngModel)] = "search_request">
+    <button type="button" class="search-button" (click)="search()">Search</button>
   </div>
 
   <button type="button" *ngIf="isLogged" (click)="logout()">Log out</button>

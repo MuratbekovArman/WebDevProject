@@ -6,9 +6,11 @@ import {SubCategoriesComponent} from './sub-categories/sub-categories.component'
 import {ProductsComponent} from './products/products.component';
 import {SalesComponent} from './sales/sales.component';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
+  {path: 'search/:search_request', component: SearchResultsComponent},
   {path: 'categories', component: CategoryListComponent},
   {path: 'categories/:category_id', component: SubCategoriesComponent},
   {path: 'categories/:category_id/:subcategory_id', component: ProductsComponent},
