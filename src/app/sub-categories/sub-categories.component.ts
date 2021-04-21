@@ -9,7 +9,7 @@ import {SubCategoryService} from '../sub-category.service';
   styleUrls: ['./sub-categories.component.css']
 })
 export class SubCategoriesComponent implements OnInit {
-sub_categories!: Sub_category[] |undefined;
+sub_categories!: Sub_category[] | undefined;
 
   constructor(private route: ActivatedRoute,
               private subcatService: SubCategoryService) { }
@@ -23,7 +23,6 @@ sub_categories!: Sub_category[] |undefined;
       const id = Number(params.get('category_id'));
       this.subcatService.getSubcategories(id).subscribe((subCat) => {
         this.sub_categories = subCat;
-        console.log(subCat);
       });
     });
   }

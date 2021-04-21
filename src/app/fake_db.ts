@@ -29,7 +29,8 @@ export const PRODUCTS: Product[] = [
     name: 'name 1',
     price: 200, description: 'Abc',
     image: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fogdream.ru%2Fimages%2Fdetailed%2F1%2Fbrr.png&f=1&nofb=1',
-    rating: 3.3
+    rating: 3.3,
+    sub_category: 1
 
  },
   {id: 2,
@@ -37,7 +38,8 @@ export const PRODUCTS: Product[] = [
     price: 200,
     description: 'Abc',
     image: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fogdream.ru%2Fimages%2Fdetailed%2F1%2Fbrr.png&f=1&nofb=1',
-    rating: 5
+    rating: 5,
+    sub_category: 1
   },
   {
     id: 3,
@@ -45,7 +47,8 @@ export const PRODUCTS: Product[] = [
     price: 200,
     description: 'Abc',
     image: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fogdream.ru%2Fimages%2Fdetailed%2F1%2Fbrr.png&f=1&nofb=1',
-    rating: 3.5
+    rating: 3.5,
+    sub_category: 2
   },
   {
     id: 4,
@@ -53,7 +56,8 @@ export const PRODUCTS: Product[] = [
     price: 200,
     description: 'Abc',
     image: 'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fogdream.ru%2Fimages%2Fdetailed%2F1%2Fbrr.png&f=1&nofb=1',
-    rating: 3
+    rating: 3,
+    sub_category: 3
   },
 
 ];
