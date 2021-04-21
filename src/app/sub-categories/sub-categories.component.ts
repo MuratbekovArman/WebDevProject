@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {Sub_category} from '../models';
-import {ActivatedRoute} from '@angular/router';
+import {Category, Sub_category} from '../models';
+import {ActivatedRoute, Router} from '@angular/router';
 import {SubcategoryService} from '../subcategory.service';
 import {Location} from '@angular/common';
+import {CATEGORIES, SUB_CATEGORIES} from '../fake_db';
 
 @Component({
   selector: 'app-sub-categories',
@@ -11,13 +12,17 @@ import {Location} from '@angular/common';
 })
 export class SubCategoriesComponent implements OnInit {
   sub_categories!: Sub_category[] | undefined;
+  cat!: Category | undefined;
+  ids: any;
 
   constructor(private route: ActivatedRoute,
               private location: Location,
-              private subcatService: SubcategoryService) { }
+              private subcatService: SubcategoryService,
+              private router: Router) { }
 
   ngOnInit(): void {
     this.getSubCategory();
+    this.getName();
   }
 
   getSubCategory() {
@@ -26,6 +31,13 @@ export class SubCategoriesComponent implements OnInit {
       this.subcatService.getSubcategories(id).subscribe((subCat) => {
         this.sub_categories = subCat;
       });
+    });
+  }
+
+  getName() {
+    this.ids = this.router.url.split('/').slice(this.router.url.split('/').length-2,this.router.url.split('/').length);
+    this.cat = CATEGORIES.find( (a) => {
+      return a.id == this.ids[1];
     });
   }
 
