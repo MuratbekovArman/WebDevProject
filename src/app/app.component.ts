@@ -13,7 +13,6 @@ export class AppComponent implements OnInit{
   title = 'project-app';
 
   logged = true;
-  isShown = false;
   username = '';
   password = '';
 
@@ -35,17 +34,15 @@ export class AppComponent implements OnInit{
     });
 
 
-
   }
 
   logout(){
     this.logged = false;
     localStorage.removeItem('token');
-    this.isShown = false;
   }
 
 
-  visualizeForm(isShown){
+  visualizeForm(isShown: any){
     if(!isShown){
       this.logout();
     }
