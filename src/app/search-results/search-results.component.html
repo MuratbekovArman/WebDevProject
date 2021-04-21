@@ -1,7 +1,9 @@
 
-<div class="">
-  <div class="" *ngFor="let result of results">
+<div class="main" *ngIf="results.length > 0">
+  <div class="results" *ngFor="let result of results" >
+    <img src="{{result.image}}" alt="123">
     <a routerLink="/categories/{{getCategoryId(result.sub_category)}}/{{result.sub_category}}/{{result.id}}">{{result.name}}</a>
-    {{result.description}}
   </div>
 </div>
+
+<h1 *ngIf="results.length == 0">No results</h1>
