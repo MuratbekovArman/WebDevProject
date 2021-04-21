@@ -1,0 +1,25 @@
+button:hover{
+  cursor: pointer;
+}
+
+
+/*main components*/
+
+.main{
+  width:80%;
+  margin:0,auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main button{
+  background-color: #ff681d;
+  color: white;
+  border: 0px;
+  border-radius: 3px;
+}
+
+.main input{
+  border: 1px solid gray;
+  border-radius: 3px;
+}
