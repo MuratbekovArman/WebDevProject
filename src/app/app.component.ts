@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {CategoryService} from './category.service';
 
 @Component({
@@ -6,10 +6,14 @@ import {CategoryService} from './category.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
+
 export class AppComponent implements OnInit{
   title = 'project-app';
 
   logged = true;
+  isShown = false;
   username = '';
   password = '';
 
@@ -29,10 +33,21 @@ export class AppComponent implements OnInit{
       this.username = '';
       this.password = '';
     });
+
+
+
   }
 
   logout(){
     this.logged = false;
     localStorage.removeItem('token');
+    this.isShown = false;
+  }
+
+
+  visualizeForm(isShown){
+    if(!isShown){
+      this.logout();
+    }
   }
 }
