@@ -1,0 +1,50 @@
+.form {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  border: solid 1px rgba(217,217,217,0.85);
+  justify-content: space-between;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+
+.form-header {
+  align-self: flex-start;
+  margin-left: 40px;
+}
+
+input {
+  height: 50px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px gainsboro solid;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.inputs {
+  position: relative;
+  display: flex;
+}
+.inputs > label {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #ff681d;
+  font-weight: bold;
+
+}
+
+.form-button {
+  width: 410px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #ff681d;
+  border: transparent;
+  font-size: 20px;
+  color: white;
+}
