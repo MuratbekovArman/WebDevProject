@@ -1,2 +1,49 @@
-<p>main works!</p>
+<div class="ad">
+    <img width=300px src="https://www.technodom.kz/media/scandiweb/slider/1/0/1080sco.gif">
+</div>
+<button [routerLink]="'/sales/'" >sales</button>
+<div class="info-banner">
+    <p>Online shop TECHNODOM.KZ</p>
+    <h2>
+        The TECHNODOM online store is one of the projects of the TECHNODOM company - the leader of the national network of stores for electrical and computer equipment of the Republic of Kazakhstan. If you are looking for the best online store in Kazakhstan - it is located at www.technodom.kz.
+    </h2>
+
+    <div class="info-details" [ngClass]="{'limitTextHeight': isReadMore}">
+        Main store TECHNODOM - improving the quality of life of customers. The combination of technologies of a new level and trends in retail trade allow us to delight the most comfortable and affordable purchase of goods through a large online store of equipment.
+       <p>
+        As you know, time is money, so you need to treat it sparingly. And you can always buy one or another electrical and computer equipment in an online store quickly: the main thing is that there is plenty to choose from. The range of goods offered by our online store of household appliances, electronics and digital technology includes more than 60,000 items!
+       </p>
+       <p>
+        Scrolling through the offers of many online stores in Kazakhstan, you will certainly stop your choice on the pages of TECHNODOM, because this is an online store of high quality household appliances! Our company guarantees the best offers, low prices and a high professional level of service. Regardless of your current location, you have the opportunity to order goods in a cheap online store. Real saving of budget and time is convenient and profitable!
+       </p>
+       <p>
+        Low prices, convenient delivery, round-the-clock service and high-quality goods, the TECHNODOM online store provides for everyone!
+       </p>
+
+    </div>
+    <button class="read" type="button" (click)="showText()">
+        {{ isReadMore ? 'Read More': 'Read Less' }}
+      </button>
+
+</div>
+
+<div class="but">
+    <div class="but">
+        <img  class="image"src="https://www.technodom.kz/media/wysiwyg/111_1.png">
+        <h3> Free shipping</h3>
+    </div>
+    <div class="but">
+        <img class="image" src="https://www.technodom.kz/media/wysiwyg/3232.png">
+        <h3> Online installment</h3>
+    </div>
+    <div class="but">
+        <img class="image" src="https://www.technodom.kz/media/wysiwyg/4543.png">
+        <h3> Free hotline from 08:00 to 00:00</h3>
+    </div>
+    <div class="but">
+        <img id="icon" src="https://www.technodom.kz/media/wysiwyg/cms/footer/app-store-icon.png">
+        <h3>
+            Unique offers and promotions are waiting for you in the application</h3>
+        </div>
+    </div>
 
