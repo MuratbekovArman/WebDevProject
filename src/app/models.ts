@@ -26,3 +26,11 @@ export interface Sub_category {
   category_id: number;
 
 }
+
+export interface Sale {
+  id: number;
+  name: string;
+  description: string;
+  date: Date;
+  image: string;
+}

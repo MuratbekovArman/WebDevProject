@@ -1,0 +1,49 @@
+.sale-card {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 600px;
+  height: 200px;
+  background-color: white;
+  align-items: center;
+  padding-left: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: solid 1px lightgray;
+
+}
+
+.sale-image {
+  height: 150px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sale-list {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.sale-header {
+  margin-left: 300px;
+}
+
+.sale-inf {
+  display: flex;
+  flex-direction: column;
+}
+
+.sale-description {
+  overflow: auto;
+  height: 45px;
+}
+
+.sale-date {
+  font-style: italic;
+}
+
