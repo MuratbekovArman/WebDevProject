@@ -1,0 +1,37 @@
+.list {
+  margin: auto;
+  width: 44%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: solid 1px lightgray;
+  justify-content: center;
+
+}
+
+.product-image {
+  margin-top: 20px;
+  height: 200px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.product-name {
+  text-align: center;
+}
+.product-header {
+  margin-left: 28%;
+}

@@ -1,10 +1,17 @@
-<h1>{{cat.name}}</h1>
 
-<ul class="list">
-  <li *ngFor="let product of products">
-    <a routerLink='{{product.id}}'>
-      {{product.name}}
+<div class="product-header">
+  <h1>{{cat.name}}</h1>
+  <p>Total {{products.length}} products</p>
+</div>
+
+<div class="list">
+  <div class="product-card" *ngFor="let product of products">
+    <a class="link" routerLink='{{product.id}}'>
+      <img class="product-image" src="{{product.image}}" alt="">
+      <p class="product-name">{{product.name}}</p>
+      <p class="product-price">{{product.price}} ₸</p>
+
     </a>
-  </li>
-</ul>
+  </div>
+</div>
 <button (click)="goBack()">Back</button>

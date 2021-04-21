@@ -29,7 +29,7 @@ export const PRODUCTS: Product[] = [
     name: 'product 1',
     price: 1,
     description: 'Abc',
-    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
     rating: 3.3,
     sub_category: 1
 
@@ -38,7 +38,7 @@ export const PRODUCTS: Product[] = [
     name: 'product 2',
     price: 2,
     description: 'Abc',
-    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
     rating: 5,
     sub_category: 1
   },
@@ -59,6 +59,36 @@ export const PRODUCTS: Product[] = [
     image: 'https://img.icons8.com/ios/452/product--v2.png',
     rating: 3,
     sub_category: 3
+  },
+  {
+    id: 5,
+    name: 'product 1',
+    price: 1,
+    description: 'Abc',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
+    rating: 3.3,
+    sub_category: 1
+
+  },
+  {
+    id: 6,
+    name: 'product 1',
+    price: 1,
+    description: 'Abc',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
+    rating: 3.3,
+    sub_category: 1
+
+  },
+  {
+    id: 7,
+    name: 'product 1',
+    price: 1,
+    description: 'Abc',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
+    rating: 3.3,
+    sub_category: 1
+
   },
 
 ];
