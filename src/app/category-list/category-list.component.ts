@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CategoryService } from '../category.service';
 import { Category } from '../models';
+import {CATEGORIES} from '../fake_db';
 
 @Component({
   selector: 'app-category-list',
@@ -12,12 +13,15 @@ export class CategoryListComponent implements OnInit {
   constructor(private categoryService: CategoryService) { }
 
   ngOnInit(): void {
+    this.getCategories();
+
   }
 
-  getCompanies(): void{
-    this.categoryService.getCategories().subscribe(((categories) =>{
+  getCategories(): void{
+    /*this.categoryService.getCategories().subscribe(((categories) =>{
       this.categories = categories;
-    }))
+    }))*/
+    this.categories = CATEGORIES;
   }
 
 }
