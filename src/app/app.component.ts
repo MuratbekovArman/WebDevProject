@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CategoryService} from './category.service';
 
 @Component({
@@ -32,7 +32,6 @@ export class AppComponent implements OnInit{
       this.username = '';
       this.password = '';
     });
-
 
   }
 
