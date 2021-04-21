@@ -4,14 +4,14 @@ export interface Token {
 
 export interface Category {
   id: number;
-  name : string;
+  name: string;
   image: string;
 
 }
 
 export interface Product {
   id: number;
-  name : string;
+  name: string;
   price: number;
   description: string;
   image: string;
@@ -21,8 +21,8 @@ export interface Product {
 
 export interface Sub_category {
   id: number;
-  name : string;
+  name: string;
   image: string;
-  category_id : string;
+  category_id: string;
 
 }
