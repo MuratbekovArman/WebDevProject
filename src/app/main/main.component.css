@@ -1,0 +1,18 @@
+.limitTextHeight {
+    height: 70px;
+    overflow: hidden;
+}
+.but{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-style: normal;
+
+    
+}
+.ad{
+margin-left: 500px;
+}
+.image{
+    height:70px;
+}
