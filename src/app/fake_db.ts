@@ -29,7 +29,7 @@ export const PRODUCTS: Product[] = [
     name: 'product 1',
     price: 1,
     description: 'Abc',
-    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
     rating: 3.3,
     sub_category: 1
 
@@ -38,7 +38,7 @@ export const PRODUCTS: Product[] = [
     name: 'product 2',
     price: 2,
     description: 'Abc',
-    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
     rating: 5,
     sub_category: 1
   },
@@ -60,6 +60,36 @@ export const PRODUCTS: Product[] = [
     rating: 3,
     sub_category: 3
   },
+  {
+    id: 5,
+    name: 'product 1',
+    price: 1,
+    description: 'Abc',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
+    rating: 3.3,
+    sub_category: 1
+
+  },
+  {
+    id: 6,
+    name: 'product 1',
+    price: 1,
+    description: 'Abc',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
+    rating: 3.3,
+    sub_category: 1
+
+  },
+  {
+    id: 7,
+    name: 'product 1',
+    price: 1,
+    description: 'Abc',
+    image: 'https://www.technodom.kz/media/catalog/product/cache/79d62b5a17d20b122cb8cbf050cc7241/b/8/b856eaf43c7df24ce74d8780a915ecba1131eece_217129_1vbn.jpg',
+    rating: 3.3,
+    sub_category: 1
+
+  },
 
 ];
 
@@ -68,28 +98,103 @@ export const PRODUCTS: Product[] = [
 export const SUB_CATEGORIES: Sub_category[] = [
   {
     id: 1,
-    name: 'sub 1',
+    name: 'Sub-category 1',
     image: 'https://img.icons8.com/ios/452/product--v2.png',
     category_id: 1
   },
   {
     id: 2,
-    name: 'sub 2',
+    name: 'Sub-category 2',
     image: 'https://img.icons8.com/ios/452/product--v2.png',
     category_id: 1
   },
   {
     id: 3,
-    name: 'sub 3',
+    name: 'Sub-category 3',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 1
+  },
+  {
+    id: 4,
+    name: 'Sub-category 4',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 1
+  },
+  
+
+  {
+    id: 5,
+    name: 'Sub-category 5',
     image: 'https://img.icons8.com/ios/452/product--v2.png',
     category_id: 2
   },
   {
-    id: 4,
-    name: 'sub 4',
+    id: 6,
+    name: 'Sub-category 6',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 2
+  },
+  {
+    id: 7,
+    name: 'Sub-category 7',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 2
+  },
+  {
+    id: 8,
+    name: 'Sub-category 8',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 2
+  },
+  {
+    id: 9,
+    name: 'Sub-category 9',
     image: 'https://img.icons8.com/ios/452/product--v2.png',
     category_id: 3
-  }
+  },
+  {
+    id: 10,
+    name: 'Sub-category 10',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 3
+  },
+  {
+    id: 11,
+    name: 'Sub-category 11',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 3
+  },
+  {
+    id: 12,
+    name: 'Sub-category 12',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 3
+  },
+  {
+    id: 13,
+    name: 'Sub-category 13',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 4
+  },
+  {
+    id: 14,
+    name: 'Sub-category 14',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 4
+  },
+  {
+    id: 15,
+    name: 'Sub-category 15',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 4
+  },
+  {
+    id: 16,
+    name: 'Sub-category 16',
+    image: 'https://img.icons8.com/ios/452/product--v2.png',
+    category_id: 4
+  },
+
 ];
 
 export const SALES: Sale[] = [
