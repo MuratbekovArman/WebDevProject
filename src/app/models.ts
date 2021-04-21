@@ -1,4 +1,4 @@
-export interface Token {
+export interface Auth_token {
   token: string;
 }
 
@@ -23,6 +23,6 @@ export interface Sub_category {
   id: number;
   name: string;
   image: string;
-  category_id: string;
+  category_id : number;
 
 }
