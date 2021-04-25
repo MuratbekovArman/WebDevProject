@@ -12,7 +12,7 @@ import {CategoryService} from './category.service';
 export class AppComponent implements OnInit{
   title = 'project-app';
 
-  logged = true;
+  logged = false;
   username = '';
   password = '';
 

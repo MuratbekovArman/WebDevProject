@@ -8,7 +8,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class CategoryService {
 
-  BASE_URL = '';
+  BASE_URL = 'http://127.0.0.1:8000';
 
   constructor(private http: HttpClient) { }
   login(username, password): Observable<Auth_token>{
@@ -19,6 +19,6 @@ export class CategoryService {
   }
 
   getCategories(): Observable<Category[]>{
-    return this.http.get<Category[]>(`${this.BASE_URL}/api/companies/`);
+    return this.http.get<Category[]>(`${this.BASE_URL}/api/categories/`);
   }
 }

@@ -2,23 +2,23 @@ import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs';
 import {Sale} from './models';
 import {HttpClient} from '@angular/common/http';
-import {SALES} from './fake_db';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class SaleService {
-  BASE_URL = '';
+  BASE_URL = 'http://127.0.0.1:8000';
 
   constructor(private http: HttpClient) { }
 
   // getting with http
-  // getSales(): Observable<Sale[]>{
-  //   return this.http.get<Sale[]>(`${this.BASE_URL}/api/companies/`);
-  // }
+  getSales(): Observable<Sale[]>{
+    return this.http.get<Sale[]>(`${this.BASE_URL}/api/sales`);
+  }
 
   // getting from fakeDB
-  getSales(): Sale[]{
-    return SALES;
-  }
+  // getSales(): Sale[]{
+  //   return SALES;
+  // }
 }

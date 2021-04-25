@@ -1,4 +1,4 @@
-import {Category, Product, Sub_category, Auth_token, Sale} from './models';
+import {Category, Product, Sub_category, Auth_token} from './models';
 
 export const CATEGORIES: Category[] = [
   {
@@ -120,7 +120,7 @@ export const SUB_CATEGORIES: Sub_category[] = [
     image: 'https://img.icons8.com/ios/452/product--v2.png',
     category_id: 1
   },
-  
+
 
   {
     id: 5,
@@ -197,26 +197,26 @@ export const SUB_CATEGORIES: Sub_category[] = [
 
 ];
 
-export const SALES: Sale[] = [
-  {
-    id: 1,
-    name: 'Double profit',
-    description: 'Some lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem asdasdasdas dasd as das das d asasdasdasdlorem lorasdasdas ddasdasdasdas dasd sada sdas d asd asdas da sdasd asasd asdasddsa ',
-    date: new Date(),
-    image: 'https://www.technodom.kz/under/banners/kup580.png'
-  },
-  {
-    id: 2,
-    name: 'Double profit 2',
-    description: 'Some description',
-    date: new Date(),
-    image: 'https://www.technodom.kz/under/banners/kup580.png'
-  },
-  {
-    id: 3,
-    name: 'Double profit 3',
-    description: 'Some desc',
-    date: new Date(),
-    image: 'https://www.technodom.kz/under/banners/kup580.png'
-  }
-];
+// export const SALES: Sale[] = [
+//   {
+//     id: 1,
+//     name: 'Double profit',
+//     description: 'Some lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem asdasdasdas dasd as das das d asasdasdasdlorem lorasdasdas ddasdasdasdas dasd sada sdas d asd asdas da sdasd asasd asdasddsa ',
+//     date: 1651684,
+//     image: 'https://www.technodom.kz/under/banners/kup580.png'
+//   },
+//   {
+//     id: 2,
+//     name: 'Double profit 2',
+//     description: 'Some description',
+//     date: 1354984615,
+//     image: 'https://www.technodom.kz/under/banners/kup580.png'
+//   },
+//   {
+//     id: 3,
+//     name: 'Double profit 3',
+//     description: 'Some desc',
+//     date: 1351468453,
+//     image: 'https://www.technodom.kz/under/banners/kup580.png'
+//   }
+// ];

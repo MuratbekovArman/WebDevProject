@@ -13,18 +13,19 @@ export class SalesComponent implements OnInit {
   constructor(private saleService: SaleService) { }
 
   ngOnInit(): void {
-    this.sales = this.getSales();
+    // this.sales = this.getSales();
+    this.getSales();
   }
 
   // getting from fakeDB
-  getSales(){
-  return this.saleService.getSales();
-  }
+  // getSales(){
+  // return this.saleService.getSales();
+  // }
 
   // getting with http
-  // getSales(){
-  //   this.saleService.getSales().subscribe((date) => {
-  //     this.sales = date;
-  //   });
-  // }
+  getSales(){
+    this.saleService.getSales().subscribe((date) => {
+      this.sales = date;
+    });
+  }
 }
