@@ -42,7 +42,7 @@ export class AppComponent implements OnInit{
 
 
   visualizeForm(isShown: any){
-    if(!isShown){
+    if (!isShown){
       this.logout();
     }
   }

@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   @Input() isLogged:boolean;
   @Output() isShown = new EventEmitter();
   search_request: string = "";
-  constructor(private router : Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
 
@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   search(){
 
     this.router.navigateByUrl('', { skipLocationChange: true }).then(() => {
-      this.router.navigate(['/search/'+this.search_request]);
+      this.router.navigate(['/search/' + this.search_request]);
     });
   }
 
