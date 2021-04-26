@@ -1,8 +1,9 @@
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 
-from api.models.models import Category, Sale
-from api.serializers.serializers import CategorySerializer, SaleSerializer
+from api.models import Category, Sale
+from api.serializers import CategorySerializer, SaleSerializer
+#123
 
 
 class CategoryListAPIView(generics.ListCreateAPIView):

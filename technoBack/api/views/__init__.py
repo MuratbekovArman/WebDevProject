@@ -1,0 +1,1 @@
+from api.views.views_generic import *

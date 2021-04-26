@@ -1,1 +1,1 @@
-from serializers import *
+from api.serializers.serializers import *

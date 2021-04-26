@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from api.models.models import Category, Sale
+from api.models import Category, Sale
 
 
 class CategorySerializer(serializers.ModelSerializer):
