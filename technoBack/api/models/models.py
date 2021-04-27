@@ -10,10 +10,7 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
 
     def __str__(self):
-        return {
-            'id': self.id,
-            'name': self.name
-        }
+        return f'{self.id} : {self.name}'
 
 
 class Sale(models.Model):
@@ -23,22 +20,16 @@ class Sale(models.Model):
     image = models.CharField(max_length=200, null=True)
 
     def __str__(self):
-        return {
-            'id': self.id,
-            'name': self.name
-        }
+        return f'{self.id} : {self.name}'
 
 
 class Sub_category(models.Model):
     name = models.CharField(max_length=200, null=True)
     image = models.CharField(max_length=200, null=True)
-    category_id = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
-        return {
-            'id': self.id,
-            'name': self.name
-        }
+        return f'{self.id} : {self.name}'
 
     class Meta:
         verbose_name = 'Subcategory'
@@ -54,7 +45,4 @@ class Product(models.Model):
     sub_category = models.ForeignKey(Sub_category, related_name="products", on_delete=models.CASCADE)
 
     def __str__(self):
-        return {
-            'id': self.id,
-            'name': self.name
-        }
+        return f'{self.id} : {self.name}'
