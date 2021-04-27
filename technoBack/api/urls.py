@@ -10,5 +10,6 @@ urlpatterns = [
     path('search/<search_request>/', get_needed_products),
     path('products/', ProductListAPIView.as_view()),
     path('products/<int:pk>/', ProductDetailAPIView.as_view()),
-    path('subcategories/<int:id>/products', subcat_products)
+    path('subcategories/<int:id>/products', subcat_products),
+    path('subcategories/', subcategory_list)
 ]
