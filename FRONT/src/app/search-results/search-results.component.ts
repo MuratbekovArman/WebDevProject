@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { PRODUCTS, SUB_CATEGORIES } from '../fake_db';
 import { Product } from '../models';
 
+import {SearchService} from '../search.service';
+
 @Component({
   selector: 'app-search-results',
   templateUrl: './search-results.component.html',
@@ -13,7 +15,8 @@ export class SearchResultsComponent implements OnInit {
   request : string = "";
   category_id:number;
 
-  constructor(private router : Router) { }
+  constructor(private router : Router,
+              private searchService : SearchService) { }
 
   ngOnInit(): void {
     this.getResults();
@@ -21,19 +24,13 @@ export class SearchResultsComponent implements OnInit {
 
   }
 
-  getCategoryId(id):string{
-    const sub_category = SUB_CATEGORIES.find((sC)=>{
-      return id == sC.id;
-    })
-    const category_id = sub_category.category_id;
-    return category_id.toString();
-  }
-
   getResults(){
     this.request = this.router.url.split('/')[this.router.url.split('/').length-1];
-    this.results = PRODUCTS.filter((product) => {
-      return product.name.includes(this.request) || product.description.includes(this.request)
-    })
+    this.searchService.getResults(this.request).subscribe((products) => {
+      this.results = products;
+      });
   }
+
+
 
 }
