@@ -11,5 +11,5 @@ urlpatterns = [
     path('products/', ProductListAPIView.as_view()),
     path('products/<int:pk>/', ProductDetailAPIView.as_view()),
     path('subcategories/<int:id>/products', subcat_products),
-    path('subcategories/', subcategory_list)
+    path('categories/<int:id>/subcategories', subcategory_list)
 ]

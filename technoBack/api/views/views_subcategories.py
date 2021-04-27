@@ -1,15 +1,16 @@
 from django.http import JsonResponse
 
-from api.models import Sub_category
+from api.models import Sub_category, Category
 
 from api.serializers import SubCategorySerializer
 
-def subcategory_list(request,category_id ):
-   try:
-        subcat = Sub_category.objects.get(category_id=category_id)
+
+def subcategory_list(request, id):
+    try:
+        cat = Category.objects.get(id=id)
     except Sub_category.DoesNotExist as e:
         return JsonResponse({'message:': str(e)}, status=400)
-    if request.method=="GET":
-        subcategories = Sub_category.objects.filter(category_id=subcat)
+    if request.method == "GET":
+        subcategories = Sub_category.objects.filter(category=cat)
         serializer = SubCategorySerializer(subcategories, many=True)
         return JsonResponse(serializer.data, safe=False)
