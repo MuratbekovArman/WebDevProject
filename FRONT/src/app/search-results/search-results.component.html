@@ -1,8 +1,8 @@
 
 <div class="main" *ngIf="results.length > 0">
-  <div class="results" *ngFor="let result of results" >
+  <div class="results" *ngFor="let result of results; let i = index" >
     <img src="{{result.image}}" alt="123">
-    <a routerLink="/categories/{{getCategoryId(result.sub_category)}}/{{result.sub_category}}/{{result.id}}">{{result.name}}</a>
+    <button (click) = "goToProduct(i)">{{result.name}}</button>
   </div>
 </div>
 
