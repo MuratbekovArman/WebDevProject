@@ -14,3 +14,9 @@ def subcategory_list(request, id):
         subcategories = Sub_category.objects.filter(category=cat)
         serializer = SubCategorySerializer(subcategories, many=True)
         return JsonResponse(serializer.data, safe=False)
+
+
+def getSubcategory(request, id):
+    subcategory = Sub_category.objects.get(id= id)
+    serializer = SubCategorySerializer(subcategory)
+    return JsonResponse(serializer.data)

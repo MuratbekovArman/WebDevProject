@@ -1,12 +1,10 @@
-<h1 class="headline">{{cat.name}}</h1>
+<h1 *ngIf="cat" class="headline">{{cat.name}}</h1>
 
 <div class="box">
   <p *ngFor="let subCat of sub_categories">
     <a routerLink="{{subCat.id}}">
         <img class="pics" src="{{subCat.image}}" alt="123" width="100px">
-        <div class="subname">
-            {{subCat.name}}
-        </div>
+        {{subCat.name}}
     </a>
 </div>
 

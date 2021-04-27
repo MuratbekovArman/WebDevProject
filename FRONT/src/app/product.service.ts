@@ -18,6 +18,6 @@ export class ProductService {
   // }
 
   getProducts(id): Observable<Product[]>{
-    return this.http.get<Product[]>(`${this.BASE_URL}/api/products/${id}`);
+    return this.http.get<Product[]>(`${this.BASE_URL}/api/subcategories/${id}/products`);
   }
 }

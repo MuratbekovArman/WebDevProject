@@ -1,7 +1,6 @@
-
 <div class="product-header">
-  <h1>{{cat.name}}</h1>
-  <p>Total {{products.length}} products</p>
+  <h1 *ngIf="cat">{{cat.name}}</h1>
+  <p *ngIf="products">Total {{products.length}} products</p>
 </div>
 
 <div class="list">
