@@ -17,7 +17,7 @@ export class ProductService {
   //   return of(products);
   // }
 
-  getProducts(): Observable<Product[]>{
-    return this.http.get<Product[]>(`${this.BASE_URL}/api/products`);
+  getProducts(id): Observable<Product[]>{
+    return this.http.get<Product[]>(`${this.BASE_URL}/api/products/${id}`);
   }
 }

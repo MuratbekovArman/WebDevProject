@@ -5,6 +5,7 @@ import {ProductService} from '../product.service';
 import {ProductDetailService} from '../product-detail.service';
 import {Location} from '@angular/common';
 import { PRODUCTS } from '../fake_db';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-product-detail',
@@ -35,13 +36,9 @@ export class ProductDetailComponent implements OnInit {
   // }
   getProduct() {
     this.ids = this.router.url.split('/').slice(this.router.url.split('/').length-2,this.router.url.split('/').length);
-    console.log(this.ids);
-    this.product = PRODUCTS.find( (a) => {
-      return a.id == this.ids[1];
+    this.productDetService.getProduct(this.ids[1]).subscribe((data) => {
+      this.product = data;
     });
-
-
-    console.log(this.product);
   }
   goBack() {
     this.location.back();
