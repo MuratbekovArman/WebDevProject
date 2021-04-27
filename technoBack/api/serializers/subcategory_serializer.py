@@ -7,7 +7,7 @@ class SubCategorySerializer(serializers.Serializer):
     id = serializers.IntegerField()
     name = serializers.CharField()
     image = serializers.CharField()
-    category_id = serializers.CharField()
+    category_id = serializers.IntegerField()
 
     def create(self, data):
         sub_category = Sub_category.objects.create(name=data.get(['name']))

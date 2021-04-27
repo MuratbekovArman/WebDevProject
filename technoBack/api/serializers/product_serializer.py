@@ -10,7 +10,7 @@ class ProductSerializer(serializers.Serializer):
     description = serializers.CharField()
     image = serializers.CharField()
     rating = serializers.FloatField()
-    sub_category = serializers.IntegerField()
+    sub_category_id = serializers.IntegerField()
 
     def create(self, data):
         product = Product.objects.create(name=data.get(['name']))
