@@ -8,5 +8,7 @@ urlpatterns = [
     path('sales/', SaleListAPIView.as_view()),
     path('login/', obtain_jwt_token),
     path('search/<search_request>/', get_needed_products),
-    path('products/', ProductListAPIView.as_view())
+    path('products/', ProductListAPIView.as_view()),
+    path('products/<int:pk>/', ProductDetailAPIView.as_view()),
+    path('subcategories/<int:id>/products', subcat_products)
 ]
