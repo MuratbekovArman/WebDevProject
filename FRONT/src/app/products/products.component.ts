@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {ProductService} from '../product.service';
 import {Location} from '@angular/common';
 import {PRODUCTS, SUB_CATEGORIES} from '../fake_db';
+import {SubcategoryService} from '../subcategory.service';
 
 @Component({
   selector: 'app-products',
@@ -11,13 +12,14 @@ import {PRODUCTS, SUB_CATEGORIES} from '../fake_db';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  products!: Product[] | undefined;
-  cat!: Sub_category | undefined;
+  products!: Product[] ;
+  cat!: Sub_category ;
   ids: any;
 
   constructor(private route: ActivatedRoute,
               private location: Location,
               private productService: ProductService,
+              private subcatService: SubcategoryService,
               private router: Router) { }
 
   ngOnInit(): void {
@@ -34,9 +36,9 @@ export class ProductsComponent implements OnInit {
     });
   }
   getName() {
-    this.ids = this.router.url.split('/').slice(this.router.url.split('/').length-2,this.router.url.split('/').length);
-    this.cat = SUB_CATEGORIES.find( (a) => {
-      return a.id == this.ids[1];
+    this.ids = this.router.url.split('/').slice(this.router.url.split('/').length - 2, this.router.url.split('/').length);
+    this.subcatService.getSubcategory(this.ids[1]).subscribe((data) => {
+      this.cat = data;
     });
   }
 
