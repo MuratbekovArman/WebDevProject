@@ -1,13 +1,11 @@
 <div class="main">
   <div *ngFor="let category of categories" class="category">
-
     <a routerLink = '{{category.id}}'>
       <img src="{{category.image}}" alt="123" width="100px">
-      {{category.name}}
-
+      <h4>{{category.name}}</h4>
     </a>
   </div>
 </div>
 
 <h1 *ngIf="categories.length == 0">No categories</h1>
-<button type="button" routerLink="">Back</button>
+<button type="button" routerLink="" class = "button">Back</button>

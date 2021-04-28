@@ -9,7 +9,7 @@
     <button type="button" class="search-button" (click)="search()">Search</button>
   </div>
 
-  <button type="button" *ngIf="isLogged" (click)="logout()">Log out</button>
+  <button type="button" *ngIf="isLogged" (click)="logout()" class="main-button">Log out</button>
 
 
 </div>
@@ -17,7 +17,7 @@
 <div class="empty">
 
 </div>
-
+<hr>
 <div class="categories">
   <a routerLink="categories"><button type="button">Categories</button></a>
   <button routerLink="sales" type="button">Sales</button>

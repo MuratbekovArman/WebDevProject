@@ -24,6 +24,15 @@ a:link{
   height: 30px;
 }
 
+.main .main-button{
+  border: 0px;
+  background-color: white;
+  color: #ff681d;
+  width: 80px;
+  height:30px;
+  font-weight: bold;
+}
+
 
 
 .search-button{
@@ -35,13 +44,7 @@ a:link{
   color:white;
 }
 
-.login-button{
-  border: 0px;
-  background-color: white;
-  color: #ff681d;
-  width: 80px;
-  height:30px;
-}
+
 
 
 /*category components*/
@@ -62,5 +65,5 @@ a:link{
 /*empty components*/
 
 .empty{
-  height: 40px;
+  height: 20px;
 }
