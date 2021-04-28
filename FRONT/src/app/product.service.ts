@@ -20,4 +20,13 @@ export class ProductService {
   getProducts(id): Observable<Product[]>{
     return this.http.get<Product[]>(`${this.BASE_URL}/api/subcategories/${id}/products`);
   }
+
+  getALlProducts(): Observable<Product[]>{
+    return this.http.get<Product[]>(`${this.BASE_URL}/api/products`);
+  }
+
+  addProduct(product: Product): Observable<Product> {
+    // @ts-ignore
+    return this.http.post(`${this.BASE_URL}/products`, product);
+  }
 }

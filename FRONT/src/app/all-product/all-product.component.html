@@ -1,0 +1,16 @@
+<div>
+  <h1 *ngIf="products">All products: {{this.products.length}}</h1>
+  <fieldset class="fieldset">
+    <input [(ngModel)]="newProduct" type="text" placeholder="Type your title...">
+    <button class="addBtn" (click)="addProduct()">Add Album</button>
+  </fieldset>
+  <div>
+    <ul *ngFor="let p of products">
+      <li>
+        Code:{{p.id}}|
+        Name:{{p.name}}|
+        Price:{{p.price}}
+      </li>
+    </ul>
+  </div>
+</div>

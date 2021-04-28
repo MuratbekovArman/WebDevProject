@@ -7,6 +7,7 @@ import {ProductsComponent} from './products/products.component';
 import {SalesComponent} from './sales/sales.component';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import {AllProductComponent} from './all-product/all-product.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'categories/:category_id', component: SubCategoriesComponent},
   {path: 'categories/:category_id/:subcategory_id', component: ProductsComponent},
   {path: 'categories/:category_id/:subcategory_id/:product_id', component: ProductDetailComponent},
-  {path: 'sales', component: SalesComponent}
+  {path: 'sales', component: SalesComponent},
+  {path: 'products', component: AllProductComponent}
 ];
 
 @NgModule({

@@ -15,6 +15,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {AuthInterceptor} from './AuthInterceptor';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { AllProductComponent } from './all-product/all-product.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SearchResultsComponent } from './search-results/search-results.componen
     ProductsComponent,
     ProductDetailComponent,
     SalesComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    AllProductComponent
   ],
   imports: [
     BrowserModule,
