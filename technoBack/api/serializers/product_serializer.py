@@ -17,6 +17,6 @@ class ProductSerializer(serializers.Serializer):
         return product
 
     def update(self, instance, data):
-        instance.name = data.get['name']
+        instance.name = data.get('name')
         instance.save()
         return instance
