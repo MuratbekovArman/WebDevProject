@@ -11,10 +11,12 @@ import { Router} from '@angular/router';
 })
 export class AllProductComponent implements OnInit {
   products!: Product[];
-  newProduct!: string;
+  newProductName!: string;
+  newProductPrice!: number;
+  newProductDesc!: string;
   constructor(private productService: ProductService,
               private location: Location,
-              private router : Router) { }
+              private router: Router) { }
 
   ngOnInit(): void {
     this.getAllProducts();
@@ -29,7 +31,9 @@ export class AllProductComponent implements OnInit {
 
   addProduct(){
     const product = {
-      name: this.newProduct
+      name: this.newProductName,
+      price: this.newProductPrice,
+      description: this.newProductDesc
     };
 
     this.productService.addProduct(product as Product).subscribe((prod) => {
