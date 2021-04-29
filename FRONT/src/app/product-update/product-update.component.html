@@ -1,0 +1,26 @@
+<h1 *ngIf="product_id">Update {{product_id}}</h1>
+<h1 *ngIf="!product_id">Not found</h1>
+
+
+<div class="main">
+	<div class="info">
+		<h3>Name: {{product.name}}</h3>
+		<h3>Price: {{product.price}}</h3>
+		<h3>Description: {{product.description}}</h3>
+		
+	</div>
+
+	<div *ngIf="product_id" class="form"> 
+		<label>Name: <input [(ngModel)]="product.name"></label>
+		<label>Price: <input [(ngModel)]="product.price"></label>
+		<label>Description: <input [(ngModel)]="product.description" class="desc"></label>
+
+	</div>
+
+	<button (click) = "updateProduct()">Update</button>
+
+	<div class="empty"></div>
+
+</div>
+
+

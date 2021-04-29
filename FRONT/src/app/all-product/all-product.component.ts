@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Product} from '../models';
 import {ProductService} from '../product.service';
 import {Location} from '@angular/common';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-all-product',
@@ -12,7 +13,8 @@ export class AllProductComponent implements OnInit {
   products!: Product[];
   newProduct!: string;
   constructor(private productService: ProductService,
-              private location: Location) { }
+              private location: Location,
+              private router : Router) { }
 
   ngOnInit(): void {
     this.getAllProducts();
@@ -37,8 +39,10 @@ export class AllProductComponent implements OnInit {
   }
 
   deleteProduct(id){
-  this.productService.deleteProduct(id).subscribe(() => {
-    console.log('deleted');
-  });
+    this.productService.deleteProduct(id).subscribe(() => {
+      console.log('deleted');
+    });
+    location.reload();
+
   }
 }

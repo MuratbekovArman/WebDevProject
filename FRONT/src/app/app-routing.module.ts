@@ -8,6 +8,7 @@ import {SalesComponent} from './sales/sales.component';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import {AllProductComponent} from './all-product/all-product.component';
+import {ProductUpdateComponent} from './product-update/product-update.component';
 
 const routes: Routes = [
   {path: '', component: MainComponent},
@@ -17,7 +18,9 @@ const routes: Routes = [
   {path: 'categories/:category_id/:subcategory_id', component: ProductsComponent},
   {path: 'categories/:category_id/:subcategory_id/:product_id', component: ProductDetailComponent},
   {path: 'sales', component: SalesComponent},
-  {path: 'products', component: AllProductComponent}
+  {path: 'products', component: AllProductComponent},
+  {path:  'products/:product_id', component: ProductDetailComponent},
+  {path:  'products/:product_id/update', component: ProductUpdateComponent}
 ];
 
 @NgModule({

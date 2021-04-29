@@ -16,6 +16,7 @@ import {FormsModule} from '@angular/forms';
 import {AuthInterceptor} from './AuthInterceptor';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { AllProductComponent } from './all-product/all-product.component';
+import { ProductUpdateComponent } from './product-update/product-update.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AllProductComponent } from './all-product/all-product.component';
     ProductDetailComponent,
     SalesComponent,
     SearchResultsComponent,
-    AllProductComponent
+    AllProductComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,
