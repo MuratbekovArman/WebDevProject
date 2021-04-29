@@ -42,7 +42,7 @@ class Product(models.Model):
     description = models.CharField(max_length=200, null=True)
     image = models.CharField(max_length=200, null=True)
     rating = models.FloatField(max_length=200, null=True)
-    sub_category = models.ForeignKey(Sub_category, related_name="products", on_delete=models.CASCADE)
+    sub_category = models.ForeignKey(Sub_category, related_name="products", on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return f'{self.id} : {self.name}'
