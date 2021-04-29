@@ -27,6 +27,10 @@ export class ProductService {
 
   addProduct(product: Product): Observable<Product> {
     // @ts-ignore
-    return this.http.post(`${this.BASE_URL}/products`, product);
+    return this.http.post(`${this.BASE_URL}/api/products/`, product);
+  }
+
+  deleteProduct(id: number): Observable<any>{
+    return this.http.delete(`${this.BASE_URL}/api/products/${id}`);
   }
 }

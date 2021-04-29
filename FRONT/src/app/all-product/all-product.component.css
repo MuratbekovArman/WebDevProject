@@ -1,0 +1,50 @@
+ul {
+  list-style: none;
+  padding-left: 20%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  width: 85%;
+  padding: 5px;
+}
+
+.delete {
+  background-color: #ff681d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  border: 1px solid lightgray;
+  width: 50%;
+  margin: auto;
+}
+
+.fieldset {
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+.addBtn {
+  border: none;
+  background-color: #ff681d;
+  color: white;
+  border-radius: 5px;
+}
+
+.input {
+  border: 1px solid lightgray;
+  margin-right: 10px;
+  height: 20px;
+  width: 300px;
+}
